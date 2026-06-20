@@ -1,0 +1,58 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-gold: #d4af37;
+  --color-gold-bright: #f5d676;
+  --color-gold-deep: #9a7b1f;
+  --color-velvet: #0a0710;
+  --color-velvet-light: #15101f;
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Georgia', 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-velvet);
+    color: #ece6d8;
+    font-family: var(--font-body);
+  }
+}
+
+/* Subtle film-grain / vignette over the velvet background */
+.stage-bg {
+  background:
+    radial-gradient(circle at 50% -10%, rgba(212, 175, 55, 0.18), transparent 55%),
+    radial-gradient(circle at 50% 120%, rgba(212, 175, 55, 0.08), transparent 50%),
+    var(--color-velvet);
+}
+
+.gold-text {
+  background: linear-gradient(180deg, var(--color-gold-bright) 0%, var(--color-gold) 45%, var(--color-gold-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.85; }
+  50% { opacity: 1; filter: drop-shadow(0 0 14px rgba(245, 214, 118, 0.55)); }
+}
+.shimmer {
+  animation: shimmer 3.5s ease-in-out infinite;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}

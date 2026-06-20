@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+.env
+.DS_Store
+
+# Harvest cache: raw HTTP responses + the large raw dataset. Re-derivable, not committed.
+# The baked data/awards-2026.json IS committed so the site builds without scraping.
+.cache/
+data/raw-2026.json
