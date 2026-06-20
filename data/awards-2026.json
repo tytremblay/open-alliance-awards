@@ -1,11 +1,12 @@
 {
   "season": 2026,
-  "generatedAt": "2026-06-20T14:48:44.083Z",
+  "generatedAt": "2026-06-20T15:13:24.605Z",
   "stats": {
-    "threads": 165,
-    "posts": 7796,
-    "totalLikes": 48583,
-    "totalViews": 1098894
+    "threads": 139,
+    "posts": 7368,
+    "totalLikes": 47148,
+    "totalViews": 1056742,
+    "teamsCelebrated": 25
   },
   "categories": [
     {
@@ -14,13 +15,14 @@
       "emoji": "🏆",
       "blurb": "The build thread the community loved most, by total likes.",
       "method": "metric",
-      "presenter": "The envelope please. For sheer, sustained adoration across an entire season…",
+      "tier": "marquee",
+      "presenter": "The envelope, please. For sheer, sustained adoration across an entire season…",
       "winner": {
         "team": 6328,
         "teamName": "FRC 6328 Mechanical Advantage",
         "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
         "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595",
-        "citation": "Most-liked build thread of the season.",
+        "citation": "The most-liked build thread of the season.",
         "stat": "7,326 likes"
       },
       "nominees": [
@@ -29,7 +31,7 @@
           "teamName": "FRC 5000 Hammerheads",
           "threadTitle": "FRC 5000 Hammerheads 2026 Build Thread | Open Alliance",
           "url": "https://www.chiefdelphi.com/t/frc-5000-hammerheads-2026-build-thread-open-alliance/507502",
-          "citation": "Most-liked build thread of the season.",
+          "citation": "The most-liked build thread of the season.",
           "stat": "6,541 likes"
         },
         {
@@ -37,7 +39,7 @@
           "teamName": "FRC 4481 Team Rembrandts",
           "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
           "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296",
-          "citation": "Most-liked build thread of the season.",
+          "citation": "The most-liked build thread of the season.",
           "stat": "5,037 likes"
         },
         {
@@ -45,16 +47,8 @@
           "teamName": "Spectrum 3847",
           "threadTitle": "Spectrum 3847 | Build Blog 2026",
           "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
-          "citation": "Most-liked build thread of the season.",
+          "citation": "The most-liked build thread of the season.",
           "stat": "3,721 likes"
-        },
-        {
-          "team": 111,
-          "teamName": "WildStang Robotics Program: Team 111 and 112",
-          "threadTitle": "WildStang Robotics Program: Team 111 and 112 Build Blog - 2026",
-          "url": "https://www.chiefdelphi.com/t/wildstang-robotics-program-team-111-and-112-build-blog-2026/509853",
-          "citation": "Most-liked build thread of the season.",
-          "stat": "2,980 likes"
         }
       ]
     },
@@ -62,32 +56,25 @@
       "key": "audience-award",
       "title": "Audience Award",
       "emoji": "👀",
-      "blurb": "The thread the most eyeballs could not stop watching, by total views.",
+      "blurb": "A build thread the whole community kept coming back to.",
       "method": "metric",
+      "tier": "marquee",
       "presenter": "This one played to a packed house all season long…",
       "winner": {
-        "team": 6328,
-        "teamName": "FRC 6328 Mechanical Advantage",
-        "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
-        "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595",
-        "citation": "Most-viewed build thread of the season.",
-        "stat": "155,959 views"
+        "team": 4481,
+        "teamName": "FRC 4481 Team Rembrandts",
+        "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296",
+        "citation": "One of the most-watched build threads of the season.",
+        "stat": "114,179 views"
       },
       "nominees": [
-        {
-          "team": 4481,
-          "teamName": "FRC 4481 Team Rembrandts",
-          "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296",
-          "citation": "Most-viewed build thread of the season.",
-          "stat": "114,179 views"
-        },
         {
           "team": 5000,
           "teamName": "FRC 5000 Hammerheads",
           "threadTitle": "FRC 5000 Hammerheads 2026 Build Thread | Open Alliance",
           "url": "https://www.chiefdelphi.com/t/frc-5000-hammerheads-2026-build-thread-open-alliance/507502",
-          "citation": "Most-viewed build thread of the season.",
+          "citation": "One of the most-watched build threads of the season.",
           "stat": "89,726 views"
         },
         {
@@ -95,7 +82,7 @@
           "teamName": "Spectrum 3847",
           "threadTitle": "Spectrum 3847 | Build Blog 2026",
           "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
-          "citation": "Most-viewed build thread of the season.",
+          "citation": "One of the most-watched build threads of the season.",
           "stat": "86,539 views"
         },
         {
@@ -103,7 +90,7 @@
           "teamName": "WildStang Robotics Program: Team 111 and 112",
           "threadTitle": "WildStang Robotics Program: Team 111 and 112 Build Blog - 2026",
           "url": "https://www.chiefdelphi.com/t/wildstang-robotics-program-team-111-and-112-build-blog-2026/509853",
-          "citation": "Most-viewed build thread of the season.",
+          "citation": "One of the most-watched build threads of the season.",
           "stat": "62,658 views"
         }
       ]
@@ -114,38 +101,23 @@
       "emoji": "💬",
       "blurb": "The thread that simply would not stop talking, by post count.",
       "method": "metric",
+      "tier": "marquee",
       "presenter": "For a cast that never met a silence it could not fill…",
       "winner": {
         "team": 5000,
         "teamName": "FRC 5000 Hammerheads",
         "threadTitle": "FRC 5000 Hammerheads 2026 Build Thread | Open Alliance",
         "url": "https://www.chiefdelphi.com/t/frc-5000-hammerheads-2026-build-thread-open-alliance/507502",
-        "citation": "Highest post count of the season.",
+        "citation": "One of the most active build threads of the season.",
         "stat": "1,087 posts"
       },
       "nominees": [
-        {
-          "team": 6328,
-          "teamName": "FRC 6328 Mechanical Advantage",
-          "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
-          "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595",
-          "citation": "Highest post count of the season.",
-          "stat": "915 posts"
-        },
-        {
-          "team": 4481,
-          "teamName": "FRC 4481 Team Rembrandts",
-          "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296",
-          "citation": "Highest post count of the season.",
-          "stat": "522 posts"
-        },
         {
           "team": 3847,
           "teamName": "Spectrum 3847",
           "threadTitle": "Spectrum 3847 | Build Blog 2026",
           "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
-          "citation": "Highest post count of the season.",
+          "citation": "One of the most active build threads of the season.",
           "stat": "418 posts"
         },
         {
@@ -153,58 +125,16 @@
           "teamName": "2358 Bearbotics",
           "threadTitle": "2358 Bearbotics | Build Blog 2026 Rebuilt | Open Alliance",
           "url": "https://www.chiefdelphi.com/t/2358-bearbotics-build-blog-2026-rebuilt-open-alliance/508942",
-          "citation": "Highest post count of the season.",
+          "citation": "One of the most active build threads of the season.",
           "stat": "254 posts"
-        }
-      ]
-    },
-    {
-      "key": "box-office-smash",
-      "title": "Box Office Smash",
-      "emoji": "📈",
-      "blurb": "Fastest to win hearts — the best likes-per-day since opening night.",
-      "method": "metric",
-      "presenter": "Opened big and never cooled off…",
-      "winner": {
-        "team": 2102,
-        "teamName": "2102",
-        "threadTitle": "2102 Build Thread 2026-2027 Open Alliance",
-        "url": "https://www.chiefdelphi.com/t/2102-build-thread-2026-2027-open-alliance/521559",
-        "citation": "Best engagement-per-day since the thread opened.",
-        "stat": "78.0 likes/day"
-      },
-      "nominees": [
-        {
-          "team": 6328,
-          "teamName": "FRC 6328 Mechanical Advantage",
-          "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
-          "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595",
-          "citation": "Best engagement-per-day since the thread opened.",
-          "stat": "48.1 likes/day"
         },
         {
-          "team": 5000,
-          "teamName": "FRC 5000 Hammerheads",
-          "threadTitle": "FRC 5000 Hammerheads 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-5000-hammerheads-2026-build-thread-open-alliance/507502",
-          "citation": "Best engagement-per-day since the thread opened.",
-          "stat": "29.8 likes/day"
-        },
-        {
-          "team": 3847,
-          "teamName": "Spectrum 3847",
-          "threadTitle": "Spectrum 3847 | Build Blog 2026",
-          "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
-          "citation": "Best engagement-per-day since the thread opened.",
-          "stat": "25.9 likes/day"
-        },
-        {
-          "team": 4481,
-          "teamName": "FRC 4481 Team Rembrandts",
-          "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296",
-          "citation": "Best engagement-per-day since the thread opened.",
-          "stat": "22.5 likes/day"
+          "team": 111,
+          "teamName": "WildStang Robotics Program: Team 111 and 112",
+          "threadTitle": "WildStang Robotics Program: Team 111 and 112 Build Blog - 2026",
+          "url": "https://www.chiefdelphi.com/t/wildstang-robotics-program-team-111-and-112-build-blog-2026/509853",
+          "citation": "One of the most active build threads of the season.",
+          "stat": "248 posts"
         }
       ]
     },
@@ -212,51 +142,389 @@
       "key": "peoples-choice",
       "title": "People's Choice",
       "emoji": "❤️",
-      "blurb": "The single most-liked post of the entire season.",
+      "blurb": "One of the most-liked single posts of the whole season.",
       "method": "metric",
+      "tier": "marquee",
       "presenter": "One post. One moment. The whole crowd on its feet…",
       "winner": {
-        "team": 6328,
-        "teamName": "David Powers",
-        "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
-        "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595/1",
-        "citation": "A single post by David Powers in “FRC 6328 Mechanical Advantage”.",
-        "stat": "128 likes"
+        "team": 111,
+        "teamName": "WildStang Robotics Program: Team 111 and 112",
+        "threadTitle": "WildStang Robotics Program: Team 111 and 112 Build Blog - 2026",
+        "url": "https://www.chiefdelphi.com/t/wildstang-robotics-program-team-111-and-112-build-blog-2026/509853/181",
+        "citation": "A single post by Harrison Drake that the room adored.",
+        "stat": "115 likes"
       },
       "nominees": [
         {
-          "team": 111,
-          "teamName": "Harrison Drake",
-          "threadTitle": "WildStang Robotics Program: Team 111 and 112 Build Blog - 2026",
-          "url": "https://www.chiefdelphi.com/t/wildstang-robotics-program-team-111-and-112-build-blog-2026/509853/181",
-          "citation": "A single post by Harrison Drake in “WildStang Robotics Program: Team 111 and 112”.",
-          "stat": "115 likes"
+          "team": 3847,
+          "teamName": "Spectrum 3847",
+          "threadTitle": "Spectrum 3847 | Build Blog 2026",
+          "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971/275",
+          "citation": "A single post by Vasista that the room adored.",
+          "stat": "77 likes"
         },
         {
-          "team": 4481,
-          "teamName": "Bjorn Janssen",
-          "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296/1",
-          "citation": "A single post by Bjorn Janssen in “FRC 4481 Team Rembrandts”.",
-          "stat": "109 likes"
+          "team": 694,
+          "teamName": "FRC 694 StuyPulse",
+          "threadTitle": "FRC 694 StuyPulse | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490/64",
+          "citation": "A single post by clydefrog88 that the room adored.",
+          "stat": "68 likes"
         },
         {
-          "team": 4481,
-          "teamName": "Bjorn Janssen",
-          "threadTitle": "FRC 4481 Team Rembrandts | 2026 Build Thread | Open Alliance",
-          "url": "https://www.chiefdelphi.com/t/frc-4481-team-rembrandts-2026-build-thread-open-alliance/507296/206",
-          "citation": "A single post by Bjorn Janssen in “FRC 4481 Team Rembrandts”.",
-          "stat": "109 likes"
-        },
-        {
-          "team": 6328,
-          "teamName": "Neel H",
-          "threadTitle": "FRC 6328 Mechanical Advantage 2026 Build Thread",
-          "url": "https://www.chiefdelphi.com/t/frc-6328-mechanical-advantage-2026-build-thread/509595/272",
-          "citation": "A single post by Neel H in “FRC 6328 Mechanical Advantage”.",
-          "stat": "104 likes"
+          "team": 3467,
+          "teamName": "3467 Windham Windup",
+          "threadTitle": "3467 Windham Windup 2026 Build Blog",
+          "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474/1",
+          "citation": "A single post by Kevin_Leonard that the room adored.",
+          "stat": "67 likes"
         }
       ]
+    },
+    {
+      "key": "rookie-spotlight",
+      "title": "Rookie / Newcomer Spotlight",
+      "emoji": "🌱",
+      "blurb": "The standout build log from a newer team (a recent rookie class).",
+      "method": "metric",
+      "tier": "spotlight",
+      "presenter": "Everyone starts somewhere — and some starts are dazzling…",
+      "winner": {
+        "team": 9280,
+        "teamName": "High Altitude 9280",
+        "threadTitle": "High Altitude 9280 | Build Thread 2026 | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/high-altitude-9280-build-thread-2026-open-alliance/509708",
+        "citation": "A newer team that showed up and showed out.",
+        "stat": "858 likes · 60 posts"
+      },
+      "nominees": [
+        {
+          "team": 9496,
+          "teamName": "LYNK 9496",
+          "threadTitle": "LYNK 9496 | Build Log 2026",
+          "url": "https://www.chiefdelphi.com/t/lynk-9496-build-log-2026/511797",
+          "citation": "A newer team that showed up and showed out.",
+          "stat": "649 likes · 150 posts"
+        },
+        {
+          "team": 9062,
+          "teamName": "9062 Critical Circuits",
+          "threadTitle": "9062 Critical Circuits | 2026 Build Thread & Robots Done Quick",
+          "url": "https://www.chiefdelphi.com/t/9062-critical-circuits-2026-build-thread-robots-done-quick/508471",
+          "citation": "A newer team that showed up and showed out.",
+          "stat": "266 likes · 55 posts"
+        },
+        {
+          "team": 9644,
+          "teamName": "9644 NEIA Robotics",
+          "threadTitle": "9644 NEIA Robotics | 2026 Build Thread",
+          "url": "https://www.chiefdelphi.com/t/9644-neia-robotics-2026-build-thread/509142",
+          "citation": "A newer team that showed up and showed out.",
+          "stat": "220 likes · 42 posts"
+        }
+      ]
+    },
+    {
+      "key": "hidden-gem",
+      "title": "Hidden Gem",
+      "emoji": "💎",
+      "blurb": "A thread the crowd has not found yet — lots of love, modest traffic.",
+      "method": "metric",
+      "tier": "spotlight",
+      "presenter": "Criminally under-watched, and absolutely worth your time…",
+      "winner": {
+        "team": 1155,
+        "teamName": "FRC 1155 The SciBorgs",
+        "threadTitle": "FRC 1155 The SciBorgs | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/frc-1155-the-sciborgs-2026-build-thread-open-alliance/513022",
+        "citation": "Earned outsized love despite a quiet audience.",
+        "stat": "141 likes · only 1,872 views"
+      },
+      "nominees": [
+        {
+          "team": 3061,
+          "teamName": "FRC 3061 Huskie Robotics",
+          "threadTitle": "FRC 3061 Huskie Robotics - 2025 Preseason Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-3061-huskie-robotics-2025-preseason-build-thread/506613",
+          "citation": "Earned outsized love despite a quiet audience.",
+          "stat": "99 likes · only 1,629 views"
+        },
+        {
+          "team": 5119,
+          "teamName": "FRC 5119 Team STEAM",
+          "threadTitle": "FRC 5119 Team STEAM |2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-5119-team-steam-2026-build-thread-open-alliance/507554",
+          "citation": "Earned outsized love despite a quiet audience.",
+          "stat": "97 likes · only 1,740 views"
+        },
+        {
+          "team": 5968,
+          "teamName": "FRC 5968 Little Apple Cyborgs",
+          "threadTitle": "FRC 5968 Little Apple Cyborgs | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-5968-little-apple-cyborgs-2026-build-thread-open-alliance/510109",
+          "citation": "Earned outsized love despite a quiet audience.",
+          "stat": "84 likes · only 1,470 views"
+        }
+      ]
+    },
+    {
+      "key": "quality-over-quantity",
+      "title": "Quality Over Quantity",
+      "emoji": "🎯",
+      "blurb": "Highest average likes per post — every post landed.",
+      "method": "metric",
+      "tier": "spotlight",
+      "presenter": "They did not post the most. They posted the best…",
+      "winner": {
+        "team": 1710,
+        "teamName": "FRC Team 1710",
+        "threadTitle": "FRC Team 1710 | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/frc-team-1710-2026-build-thread-open-alliance/507939",
+        "citation": "Made every single post count.",
+        "stat": "10.2 likes/post"
+      },
+      "nominees": [
+        {
+          "team": 3061,
+          "teamName": "FRC 3061 Huskie Robotics",
+          "threadTitle": "FRC 3061 Huskie Robotics - 2026 Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-3061-huskie-robotics-2026-build-thread/509957",
+          "citation": "Made every single post count.",
+          "stat": "9.5 likes/post"
+        },
+        {
+          "team": 4322,
+          "teamName": "4322 Clockwork",
+          "threadTitle": "4322 Clockwork | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196",
+          "citation": "Made every single post count.",
+          "stat": "9.4 likes/post"
+        },
+        {
+          "team": 3847,
+          "teamName": "Spectrum 3847",
+          "threadTitle": "Spectrum 3847 | Build Blog 2026",
+          "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
+          "citation": "Made every single post count.",
+          "stat": "8.9 likes/post"
+        }
+      ]
+    },
+    {
+      "key": "best-opening-night",
+      "title": "Best Opening Night",
+      "emoji": "🚀",
+      "blurb": "The strongest debut — the most-liked opening post of the season.",
+      "method": "metric",
+      "tier": "spotlight",
+      "presenter": "You only get one first impression. This one stuck the landing…",
+      "winner": {
+        "team": 3847,
+        "teamName": "Spectrum 3847",
+        "threadTitle": "Spectrum 3847 | Build Blog 2026",
+        "url": "https://www.chiefdelphi.com/t/spectrum-3847-build-blog-2026/509971",
+        "citation": "Opened the season with a showstopper of a first post.",
+        "stat": "75 likes on the opener"
+      },
+      "nominees": [
+        {
+          "team": 3467,
+          "teamName": "3467 Windham Windup",
+          "threadTitle": "3467 Windham Windup 2026 Build Blog",
+          "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474",
+          "citation": "Opened the season with a showstopper of a first post.",
+          "stat": "67 likes on the opener"
+        },
+        {
+          "team": 694,
+          "teamName": "FRC 694 StuyPulse",
+          "threadTitle": "FRC 694 StuyPulse | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490",
+          "citation": "Opened the season with a showstopper of a first post.",
+          "stat": "55 likes on the opener"
+        },
+        {
+          "team": 95,
+          "teamName": "FRC 95 The Grasshoppers",
+          "threadTitle": "FRC 95 The Grasshoppers 2026 Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859",
+          "citation": "Opened the season with a showstopper of a first post.",
+          "stat": "40 likes on the opener"
+        }
+      ]
+    },
+    {
+      "key": "around-the-world",
+      "title": "Around the World",
+      "emoji": "🌍",
+      "blurb": "Celebrating the global reach of the Open Alliance.",
+      "method": "metric",
+      "tier": "spotlight",
+      "presenter": "FRC is a worldwide family — tonight we send our love abroad…",
+      "winner": {
+        "team": 5987,
+        "teamName": "FRC 5987 Galaxia",
+        "threadTitle": "FRC 5987 Galaxia | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/frc-5987-galaxia-2026-build-thread-open-alliance/505340",
+        "citation": "Flying the flag for FRC teams around the globe.",
+        "stat": "467 likes"
+      },
+      "nominees": [
+        {
+          "team": 4744,
+          "teamName": "Ninjas 4744",
+          "threadTitle": "Ninjas 4744 | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/ninjas-4744-2026-build-thread-open-alliance/505741",
+          "citation": "Flying the flag for FRC teams around the globe.",
+          "stat": "444 likes"
+        },
+        {
+          "team": 5406,
+          "teamName": "Celt-X 5406",
+          "threadTitle": "Celt-X 5406 | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/celt-x-5406-2026-build-thread-open-alliance/511200",
+          "citation": "Flying the flag for FRC teams around the globe.",
+          "stat": "362 likes"
+        },
+        {
+          "team": 7421,
+          "teamName": "Overture 7421",
+          "threadTitle": "Overture 7421 | Build Blog 2026 | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/overture-7421-build-blog-2026-open-alliance/510279",
+          "citation": "Flying the flag for FRC teams around the globe.",
+          "stat": "343 likes"
+        }
+      ]
+    }
+  ],
+  "superlatives": [
+    {
+      "emoji": "🦉",
+      "title": "Burning the Midnight Oil",
+      "team": 694,
+      "teamName": "FRC 694 StuyPulse",
+      "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490",
+      "line": "81 posts dropped in the small hours."
+    },
+    {
+      "emoji": "📚",
+      "title": "The Novelist",
+      "team": 4744,
+      "teamName": "Ninjas 4744",
+      "url": "https://www.chiefdelphi.com/t/ninjas-4744-2026-build-thread-open-alliance/505741",
+      "line": "A single post ran 25,757 characters."
+    },
+    {
+      "emoji": "📷",
+      "title": "Shutterbug",
+      "team": 1701,
+      "teamName": "FRC 1701 Robocubs",
+      "url": "https://www.chiefdelphi.com/t/frc-1701-robocubs-2026-build-thread-open-alliance/511402",
+      "line": "1,452 photos across the build log."
+    },
+    {
+      "emoji": "🎬",
+      "title": "Director's Cut",
+      "team": 1540,
+      "teamName": "Team 1540 Flaming Chickens",
+      "url": "https://www.chiefdelphi.com/t/team-1540-flaming-chickens-2026-build-thread/508155",
+      "line": "38 videos rolled this season."
+    },
+    {
+      "emoji": "🔗",
+      "title": "The Link Librarian",
+      "team": 4322,
+      "teamName": "4322 Clockwork",
+      "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196",
+      "line": "805 links shared with the community."
+    },
+    {
+      "emoji": "🧵",
+      "title": "The Long Haul",
+      "team": 2102,
+      "teamName": "2102",
+      "url": "https://www.chiefdelphi.com/t/2102-build-thread-2025-2026-open-alliance/506370",
+      "line": "Kept the thread alive 261 days, start to finish."
+    },
+    {
+      "emoji": "🦋",
+      "title": "Fashionably Late",
+      "team": 9449,
+      "teamName": "FRC 9449 Yellowjackets",
+      "url": "https://www.chiefdelphi.com/t/frc-9449-yellowjackets-2027-build-thread-open-alliance/520507",
+      "line": "Made a grand entrance on May 8."
+    },
+    {
+      "emoji": "📈",
+      "title": "The Steady Hand",
+      "team": 2358,
+      "teamName": "2358 Bearbotics",
+      "url": "https://www.chiefdelphi.com/t/2358-bearbotics-build-blog-2026-rebuilt-open-alliance/508942",
+      "line": "Posted on 66 different days. Consistency!"
+    },
+    {
+      "emoji": "🎤",
+      "title": "The Opening Monologue",
+      "team": 7691,
+      "teamName": "FRC 7691",
+      "url": "https://www.chiefdelphi.com/t/frc-7691-2025-2026-build-thread-open-alliance/506859",
+      "line": "An opening post of 16,843 characters."
+    },
+    {
+      "emoji": "🏷️",
+      "title": "The Tag Collector",
+      "team": 4458,
+      "teamName": "Team 4458 - Infernobotix",
+      "url": "https://www.chiefdelphi.com/t/team-4458-infernobotix-open-alliance-2026-build-thread/509731",
+      "line": "Filed under 8 different tags."
+    },
+    {
+      "emoji": "⚡",
+      "title": "Rapid Fire",
+      "team": 3467,
+      "teamName": "3467 Windham Windup",
+      "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474",
+      "line": "27 posts in a single day."
+    },
+    {
+      "emoji": "💬",
+      "title": "The Conversation Starter",
+      "team": 9496,
+      "teamName": "LYNK 9496",
+      "url": "https://www.chiefdelphi.com/t/lynk-9496-build-log-2026/511797",
+      "line": "Sparked 99 replies."
+    },
+    {
+      "emoji": "🔥",
+      "title": "Hot Start",
+      "team": 5406,
+      "teamName": "Celt-X 5406",
+      "url": "https://www.chiefdelphi.com/t/celt-x-5406-2026-build-thread-open-alliance/511200",
+      "line": "123 likes in the first week alone."
+    },
+    {
+      "emoji": "✍️",
+      "title": "The Prolific Pen",
+      "team": 95,
+      "teamName": "FRC 95 The Grasshoppers",
+      "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859",
+      "line": "One member posted 85 times."
+    },
+    {
+      "emoji": "🎨",
+      "title": "The Renderer",
+      "team": 6423,
+      "teamName": "6423 WM Iron Patriots",
+      "url": "https://www.chiefdelphi.com/t/6423-wm-iron-patriots-2026-rebuilt-build-thread/510232",
+      "line": "40 images in the opening post — a visual feast."
+    },
+    {
+      "emoji": "👀",
+      "title": "Best Read",
+      "team": 7461,
+      "teamName": "FRC 7461 Sushi Squad",
+      "url": "https://www.chiefdelphi.com/t/frc-7461-sushi-squad-2026-build-thread/511590",
+      "line": "321 views per post."
     }
   ]
 }

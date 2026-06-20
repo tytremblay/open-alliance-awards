@@ -26,6 +26,14 @@ export interface PullQuote {
 
 export type JudgingMethod = 'metric' | 'ai'
 
+/**
+ * Which section of the ceremony an award belongs to:
+ * - marquee:   the big popularity awards (likes / views / posts)
+ * - spotlight: relative/quality awards designed so smaller teams can win
+ * - juried:    judged by Claude reading the threads
+ */
+export type Tier = 'marquee' | 'spotlight' | 'juried'
+
 export interface Category {
   key: string
   title: string
@@ -33,11 +41,23 @@ export interface Category {
   /** One-line description of what the award honors. */
   blurb: string
   method: JudgingMethod
+  tier: Tier
   winner: Nominee
   nominees: Nominee[]
   quote?: PullQuote
   /** Presenter patter — a short tongue-in-cheek line read "on stage". */
   presenter?: string
+}
+
+/** A quick one-line "yearbook superlative" — many teams, one cheeky line each. */
+export interface Superlative {
+  emoji: string
+  title: string
+  team: number | null
+  teamName: string
+  url: string
+  /** The cheeky one-liner explaining the honor. */
+  line: string
 }
 
 export interface AwardsShow {
@@ -49,6 +69,9 @@ export interface AwardsShow {
     posts: number
     totalLikes: number
     totalViews: number
+    /** Distinct teams that won an award or superlative tonight. */
+    teamsCelebrated: number
   }
   categories: Category[]
+  superlatives: Superlative[]
 }

@@ -23,15 +23,24 @@ Chief Delphi (Discourse JSON API)
 The site **only reads the committed `data/awards-2026.json`** — no scraping or
 API calls happen at build or runtime, and no secrets ship to the browser.
 
-## Awards
+## Awards — built for inclusion
 
-**Metric-based** (computed from engagement numbers, no API key):
-Best Picture (likes) · Audience Award (views) · Most Talkative Ensemble (posts) ·
-Box Office Smash (likes/day) · People's Choice (top single post).
+FRC is about lifting everyone up, so the ceremony is rigged to celebrate as many
+distinct teams as possible. **A team can win at most one award all night**
+(global winner dedupe), and a whole tier of awards uses relative/quality metrics
+so smaller, quieter teams take the stage. The current run honors **~30 different
+teams** across awards plus a superlatives wall.
 
-**AI-judged** (Claude reads the threads):
-Best Original Screenplay · Best Engineering Deep-Dive · Best Cinematography ·
-Best Comedic Moment · Best Comeback · Lifetime-of-the-Season Achievement.
+- **Marquee** (popularity, no API key) — Best Picture (likes) · Audience Award
+  (views) · Most Talkative Ensemble (posts) · People's Choice (top single post).
+- **Spotlight** (relative/quality, no API key, excludes marquee winners) — Rookie /
+  Newcomer Spotlight · Hidden Gem (loved but low-traffic) · Quality Over Quantity
+  (likes per post) · Best Opening Night (debut post) · Around the World (global teams).
+- **Juried** (Claude reads the threads; only considers teams not yet honored) —
+  Best Original Screenplay · Best Engineering Deep-Dive · Best Cinematography ·
+  Best Comedic Moment · Best Comeback · Best Supporting Team (community helpers).
+- **Superlatives wall** — ~16–20 one-line shout-outs (Shutterbug, The Novelist,
+  Burning the Midnight Oil, …), each to a different team.
 
 ## Run it
 

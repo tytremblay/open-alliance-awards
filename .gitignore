@@ -8,3 +8,6 @@ dist
 # The baked data/awards-2026.json IS committed so the site builds without scraping.
 .cache/
 data/raw-2026.json
+
+# TypeScript incremental build cache
+*.tsbuildinfo

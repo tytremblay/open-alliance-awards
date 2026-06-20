@@ -35,10 +35,18 @@ function isSeason(t: TopicSummary): boolean {
 
 /** Pull a team number out of a title like "FRC 6328 ..." or "Team 1540 ...". */
 function parseTeam(title: string): number | null {
-  const m = title.match(/\b(?:frc|team)?\s*#?(\d{1,5})\b/i)
-  if (!m) return null
-  const n = Number(m[1])
-  return n >= 1 && n <= 99999 ? n : null
+  // Prefer a number explicitly marked as a team (FRC/Team/# prefix).
+  const tagged = title.match(/\b(?:frc|team)\s*#?(\d{1,5})\b|#(\d{1,5})\b/i)
+  if (tagged) {
+    const n = Number(tagged[1] ?? tagged[2])
+    if (n >= 1 && n <= 99999) return n
+  }
+  // Otherwise take a bare number, but never a season year (e.g. "2026 FRC … Directory").
+  for (const m of title.matchAll(/\b(\d{1,5})\b/g)) {
+    const n = Number(m[1])
+    if (n >= 1 && n <= 99999 && !(n >= 2018 && n <= 2030)) return n
+  }
+  return null
 }
 
 interface RawPost {

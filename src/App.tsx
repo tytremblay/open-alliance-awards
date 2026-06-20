@@ -1,14 +1,46 @@
 import { show } from './data'
 import { AwardCard } from './components/AwardCard'
+import { Superlatives } from './components/Superlatives'
 import { Statuette } from './components/Statuette'
+import type { Tier } from './types'
 
 const fmt = (n: number) => n.toLocaleString('en-US')
+
+const TIERS: Record<Tier, { label: string; tagline: string }> = {
+  marquee: {
+    label: 'The Marquee Awards',
+    tagline: 'By popular acclaim — the build threads the whole community rallied around.',
+  },
+  spotlight: {
+    label: 'The Spotlight Awards',
+    tagline: 'Shining a light beyond the usual names — quieter threads, newer teams, global crews.',
+  },
+  juried: {
+    label: 'The Juried Awards',
+    tagline: 'Judged by an AI that actually read every thread, start to finish.',
+  },
+}
 
 function Stat({ value, label }: { value: number; label: string }) {
   return (
     <div className="text-center">
       <div className="gold-text font-display text-3xl font-bold sm:text-4xl">{fmt(value)}</div>
       <div className="mt-1 text-xs uppercase tracking-[0.25em] text-stone-400">{label}</div>
+    </div>
+  )
+}
+
+function TierBanner({ tier }: { tier: Tier }) {
+  const t = TIERS[tier]
+  return (
+    <div className="mx-auto max-w-3xl px-6 pt-16 text-center">
+      <div className="mx-auto mb-5 w-16">
+        <div className="gold-rule" />
+      </div>
+      <h2 className="font-display text-sm font-bold uppercase tracking-[0.45em] text-amber-400">
+        {t.label}
+      </h2>
+      <p className="mx-auto mt-3 max-w-lg text-sm italic text-stone-400">{t.tagline}</p>
     </div>
   )
 }
@@ -37,17 +69,24 @@ export default function App() {
           >
             Open Alliance
           </a>{' '}
-          build threads — where FRC teams shared every triumph, every all-nighter, and every
-          robot-of-Theseus rebuild, in public, all season long.
+          build threads. In the spirit of FRC, the spotlight is shared widely — from the season's
+          biggest hits to its hidden gems, newest teams, and crews building all around the world.
         </p>
 
         {hasShow && (
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-            <Stat value={show.stats.threads} label="Build Threads" />
-            <Stat value={show.stats.posts} label="Posts" />
-            <Stat value={show.stats.totalLikes} label="Likes Given" />
-            <Stat value={show.stats.totalViews} label="Total Views" />
-          </div>
+          <>
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+              <Stat value={show.stats.threads} label="Build Threads" />
+              <Stat value={show.stats.posts} label="Posts" />
+              <Stat value={show.stats.totalLikes} label="Likes Given" />
+              <Stat value={show.stats.totalViews} label="Total Views" />
+            </div>
+            {show.stats.teamsCelebrated > 0 && (
+              <p className="mt-8 font-display text-xl text-amber-200">
+                🎉 {show.stats.teamsCelebrated} different teams take home an honor tonight.
+              </p>
+            )}
+          </>
         )}
         <div className="mx-auto mt-12 w-40">
           <div className="gold-rule" />
@@ -57,16 +96,29 @@ export default function App() {
       {/* ---------- The ceremony ---------- */}
       <main className="pb-16">
         {hasShow ? (
-          show.categories.map((category, i) => (
-            <div key={category.key}>
-              {i > 0 && (
-                <div className="mx-auto w-32">
-                  <div className="gold-rule opacity-40" />
+          <>
+            {show.categories.map((category, i) => {
+              const prev = show.categories[i - 1]
+              const newTier = !prev || prev.tier !== category.tier
+              return (
+                <div key={category.key}>
+                  {newTier ? (
+                    <TierBanner tier={category.tier} />
+                  ) : (
+                    <div className="mx-auto w-32">
+                      <div className="gold-rule opacity-40" />
+                    </div>
+                  )}
+                  <AwardCard category={category} index={i} />
                 </div>
-              )}
-              <AwardCard category={category} index={i} />
+              )
+            })}
+
+            <div className="mx-auto mt-8 w-40">
+              <div className="gold-rule opacity-60" />
             </div>
-          ))
+            <Superlatives items={show.superlatives} />
+          </>
         ) : (
           <div className="mx-auto max-w-xl px-6 py-20 text-center text-stone-400">
             <p className="font-display text-2xl text-amber-200">The stage is set…</p>
