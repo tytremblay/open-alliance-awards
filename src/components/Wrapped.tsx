@@ -506,7 +506,7 @@ function OutroSlide({ show, onReplay }: { show: AwardsShow; onReplay: () => void
         Replay from the top ↺
       </button>
       <p className="mx-auto mt-8 max-w-md text-xs text-stone-600">
-        A fan-made parody. Not affiliated with FIRST, Chief Delphi, or the Academy of anything.
+        A fan-made celebration. Not affiliated with FIRST, Chief Delphi, or the Academy of anything.
       </p>
     </div>
   )
