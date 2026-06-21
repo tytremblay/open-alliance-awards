@@ -1,0 +1,74 @@
+{
+  "best-screenplay": {
+    "winner_team_name": "FRC 694 StuyPulse",
+    "winner_citation": "A build thread with a whole cast of voices — including the head coach stepping up to the mic when the students left him with nothing to complain about.",
+    "quote": "Hello friends of Stuy Robotics! For those who don't know me, I'm Joe Blay and I am the head coach of the Stuyvesant Robotics program. With all the students doing such a good job posting on OA regularly, there is nothing for me to post about.",
+    "quote_author": "jblay694",
+    "presenter": "For a season-long story with real voice, real stakes, and a surprise guest narrator…",
+    "nominees": [
+      { "team_name": "Ninjas 4744", "citation": "Turned 'shooting on the move' into a page-turner — \"it's not just hard, it's writing-your-own-physics-engine hard.\"" },
+      { "team_name": "25-26 Pearadox 5414", "citation": "A genuinely reflective Year-1 retrospective written for mentors wrestling with the same problems." },
+      { "team_name": "FRC 95 The Grasshoppers", "citation": "The 'Let's Talk About…' essays read like a column you'd subscribe to." }
+    ]
+  },
+  "engineering-deep-dive": {
+    "winner_team_name": "FRC 95 The Grasshoppers",
+    "winner_citation": "Turned a brownout post-mortem into a free engineering lecture, complete with the math to back it up.",
+    "quote": "Browning out is when a robot's system voltage drops to a level where the Rio cuts off all outputs. The level is adjustable, I will use 7V for this discussion.",
+    "quote_author": "JamesCH95",
+    "presenter": "For the team that didn't just build it, but showed their work…",
+    "nominees": [
+      { "team_name": "Ninjas 4744", "citation": "Derived shooting-on-the-move from first principles instead of hand-waving it." },
+      { "team_name": "4322 Clockwork", "citation": "A turret breakdown deep enough that the student handed the calculus off to a mentor." },
+      { "team_name": "3467 Windham Windup", "citation": "The CANJunction write-up doubles as a CAN-debugging masterclass." }
+    ]
+  },
+  "best-cinematography": {
+    "winner_team_name": "Team 1540 Flaming Chickens",
+    "winner_citation": "Thirty-eight videos in a single build thread — this wasn't a blog, it was a season-long documentary.",
+    "quote": "We've made massive progress on our design, and have even started some construction! Here's our completed full-robot CAD, up to this point.",
+    "quote_author": "Crow (She/They)",
+    "presenter": "Roll the tape — and they had a lot of tape to roll…",
+    "nominees": [
+      { "team_name": "FRC 1701 Robocubs", "citation": "Over 1,400 images across the thread — a frame for every moment of the build." },
+      { "team_name": "2358 Bearbotics", "citation": "Let the footage tell the story when the Geneva mechanism finally came alive." },
+      { "team_name": "Tronic Titans 3161", "citation": "Paired clean renders with video to make every update easy to follow." }
+    ]
+  },
+  "best-comedy": {
+    "winner_team_name": "4322 Clockwork",
+    "winner_citation": "A perfectly timed mid-post hand-off from student to mentor that earned its laugh honestly.",
+    "quote": "It involved a lot of complex math and derivatives and stuff (I haven't done calculus yet :3), so I'll let the mentor explain later on this thread. Hi! It's me, \"other mentor.\"",
+    "quote_author": "apinguen",
+    "presenter": "And the award for making the whole thread laugh without ever punching down…",
+    "nominees": [
+      { "team_name": "LYNK 9496", "citation": "\"Sometimes you just have to steal from the best\" — a cheerfully honest homage to 254's Misfire." },
+      { "team_name": "9062 Critical Circuits", "citation": "Ran a 'Robots Done Quick' bit and fully committed to the speedrun energy." },
+      { "team_name": "GalacTech 4926 - OA", "citation": "\"I promise I won't make any more puns\" (they made more puns)." }
+    ]
+  },
+  "best-comeback": {
+    "winner_team_name": "9644 NEIA Robotics",
+    "winner_citation": "Went from 'cons: just about everything else' at Week 0 to the best event of their lives by DCMP — that's the arc.",
+    "quote": "DCMP was the most fun and exhilarating event we've competed at ever - and probably will remain that for a long time to come.",
+    "quote_author": "Vishnu Bharath",
+    "presenter": "For the team that took the rough first act and rewrote the ending…",
+    "nominees": [
+      { "team_name": "FRC 3061 Huskie Robotics", "citation": "\"We did what we could with what we had\" — and came back with a plan." },
+      { "team_name": "FRC 2826 Wave Robotics 🌊", "citation": "Fought the triple-coax turret for weeks until the night it finally spun up." },
+      { "team_name": "FRC 157 The AZTECHS", "citation": "The YAMS-ening: dragged a stubborn system from sim to a working bot." }
+    ]
+  },
+  "most-helpful": {
+    "winner_team_name": "3467 Windham Windup",
+    "winner_citation": "Didn't just solve their own CAN headaches — battle-tested the fix across connector types so other teams wouldn't have to.",
+    "quote": "We currently use the Molex SL compatible version, but have spent some time battle-testing both the WAGO Lever-Lock & Direct Solder versions of this board as well to ensure proper function for teams!",
+    "quote_author": "credard",
+    "presenter": "For the team whose best work this season was making everyone else's robot better…",
+    "nominees": [
+      { "team_name": "4561 The TerrorBytes", "citation": "Published a full sponsorship guide so other teams could fund themselves." },
+      { "team_name": "FRC 7407 Wired Boars", "citation": "Shared hopper simulations openly and credited the teams they learned from." },
+      { "team_name": "Celt-X 5406", "citation": "Posted their full kickoff game analysis for anyone trying to understand Rebuilt." }
+    ]
+  }
+}

@@ -1,12 +1,12 @@
 {
   "season": 2026,
-  "generatedAt": "2026-06-20T15:13:24.605Z",
+  "generatedAt": "2026-06-21T17:11:31.653Z",
   "stats": {
     "threads": 139,
     "posts": 7368,
     "totalLikes": 47148,
     "totalViews": 1056742,
-    "teamsCelebrated": 25
+    "teamsCelebrated": 31
   },
   "categories": [
     {
@@ -395,16 +395,304 @@
           "stat": "343 likes"
         }
       ]
+    },
+    {
+      "key": "best-screenplay",
+      "title": "Best Original Screenplay",
+      "emoji": "✍️",
+      "blurb": "The best writing and storytelling in a build log.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "For a season-long story with real voice, real stakes, and a surprise guest narrator…",
+      "winner": {
+        "team": 694,
+        "teamName": "FRC 694 StuyPulse",
+        "threadTitle": "FRC 694 StuyPulse | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490",
+        "citation": "A build thread with a whole cast of voices — including the head coach stepping up to the mic when the students left him with nothing to complain about.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "Hello friends of Stuy Robotics! For those who don't know me, I'm Joe Blay and I am the head coach of the Stuyvesant Robotics program. With all the students doing such a good job posting on OA regularly, there is nothing for me to post about.",
+        "author": "jblay694",
+        "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490"
+      },
+      "nominees": [
+        {
+          "team": 4744,
+          "teamName": "Ninjas 4744",
+          "threadTitle": "Ninjas 4744 | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/ninjas-4744-2026-build-thread-open-alliance/505741",
+          "citation": "Turned 'shooting on the move' into a page-turner — \"it's not just hard, it's writing-your-own-physics-engine hard.\"",
+          "stat": ""
+        },
+        {
+          "team": 25,
+          "teamName": "25-26 Pearadox 5414",
+          "threadTitle": "25-26 Pearadox 5414 Build Blog",
+          "url": "https://www.chiefdelphi.com/t/25-26-pearadox-5414-build-blog/508913",
+          "citation": "A genuinely reflective Year-1 retrospective written for mentors wrestling with the same problems.",
+          "stat": ""
+        },
+        {
+          "team": 95,
+          "teamName": "FRC 95 The Grasshoppers",
+          "threadTitle": "FRC 95 The Grasshoppers 2026 Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859",
+          "citation": "The 'Let's Talk About…' essays read like a column you'd subscribe to.",
+          "stat": ""
+        }
+      ]
+    },
+    {
+      "key": "engineering-deep-dive",
+      "title": "Best Engineering Deep-Dive",
+      "emoji": "🔧",
+      "blurb": "The most impressive technical breakdown of the season.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "For the team that didn't just build it, but showed their work…",
+      "winner": {
+        "team": 95,
+        "teamName": "FRC 95 The Grasshoppers",
+        "threadTitle": "FRC 95 The Grasshoppers 2026 Build Thread",
+        "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859",
+        "citation": "Turned a brownout post-mortem into a free engineering lecture, complete with the math to back it up.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "Browning out is when a robot's system voltage drops to a level where the Rio cuts off all outputs. The level is adjustable, I will use 7V for this discussion.",
+        "author": "JamesCH95",
+        "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859"
+      },
+      "nominees": [
+        {
+          "team": 4744,
+          "teamName": "Ninjas 4744",
+          "threadTitle": "Ninjas 4744 | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/ninjas-4744-2026-build-thread-open-alliance/505741",
+          "citation": "Derived shooting-on-the-move from first principles instead of hand-waving it.",
+          "stat": ""
+        },
+        {
+          "team": 4322,
+          "teamName": "4322 Clockwork",
+          "threadTitle": "4322 Clockwork | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196",
+          "citation": "A turret breakdown deep enough that the student handed the calculus off to a mentor.",
+          "stat": ""
+        },
+        {
+          "team": 3467,
+          "teamName": "3467 Windham Windup",
+          "threadTitle": "3467 Windham Windup 2026 Build Blog",
+          "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474",
+          "citation": "The CANJunction write-up doubles as a CAN-debugging masterclass.",
+          "stat": ""
+        }
+      ]
+    },
+    {
+      "key": "best-cinematography",
+      "title": "Best Cinematography",
+      "emoji": "🎥",
+      "blurb": "The best use of photos, CAD renders, and video.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "Roll the tape — and they had a lot of tape to roll…",
+      "winner": {
+        "team": 1540,
+        "teamName": "Team 1540 Flaming Chickens",
+        "threadTitle": "Team 1540 Flaming Chickens | 2026 Build Thread",
+        "url": "https://www.chiefdelphi.com/t/team-1540-flaming-chickens-2026-build-thread/508155",
+        "citation": "Thirty-eight videos in a single build thread — this wasn't a blog, it was a season-long documentary.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "We've made massive progress on our design, and have even started some construction! Here's our completed full-robot CAD, up to this point.",
+        "author": "Crow (She/They)",
+        "url": "https://www.chiefdelphi.com/t/team-1540-flaming-chickens-2026-build-thread/508155"
+      },
+      "nominees": [
+        {
+          "team": 1701,
+          "teamName": "FRC 1701 Robocubs",
+          "threadTitle": "FRC 1701 Robocubs | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-1701-robocubs-2026-build-thread-open-alliance/511402",
+          "citation": "Over 1,400 images across the thread — a frame for every moment of the build.",
+          "stat": ""
+        },
+        {
+          "team": 2358,
+          "teamName": "2358 Bearbotics",
+          "threadTitle": "2358 Bearbotics | Build Blog 2026 Rebuilt | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/2358-bearbotics-build-blog-2026-rebuilt-open-alliance/508942",
+          "citation": "Let the footage tell the story when the Geneva mechanism finally came alive.",
+          "stat": ""
+        },
+        {
+          "team": 3161,
+          "teamName": "Tronic Titans 3161",
+          "threadTitle": "Tronic Titans 3161 Build Thread | Open Alliance 2026",
+          "url": "https://www.chiefdelphi.com/t/tronic-titans-3161-build-thread-open-alliance-2026/507946",
+          "citation": "Paired clean renders with video to make every update easy to follow.",
+          "stat": ""
+        }
+      ]
+    },
+    {
+      "key": "best-comedy",
+      "title": "Best Comedic Moment",
+      "emoji": "😂",
+      "blurb": "The funniest, most good-natured moment of the season.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "And the award for making the whole thread laugh without ever punching down…",
+      "winner": {
+        "team": 4322,
+        "teamName": "4322 Clockwork",
+        "threadTitle": "4322 Clockwork | 2026 Build Thread | Open Alliance",
+        "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196",
+        "citation": "A perfectly timed mid-post hand-off from student to mentor that earned its laugh honestly.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "It involved a lot of complex math and derivatives and stuff (I haven't done calculus yet :3), so I'll let the mentor explain later on this thread. Hi! It's me, \"other mentor.\"",
+        "author": "apinguen",
+        "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196"
+      },
+      "nominees": [
+        {
+          "team": 9496,
+          "teamName": "LYNK 9496",
+          "threadTitle": "LYNK 9496 | Build Log 2026",
+          "url": "https://www.chiefdelphi.com/t/lynk-9496-build-log-2026/511797",
+          "citation": "\"Sometimes you just have to steal from the best\" — a cheerfully honest homage to 254's Misfire.",
+          "stat": ""
+        },
+        {
+          "team": 9062,
+          "teamName": "9062 Critical Circuits",
+          "threadTitle": "9062 Critical Circuits | 2026 Build Thread & Robots Done Quick",
+          "url": "https://www.chiefdelphi.com/t/9062-critical-circuits-2026-build-thread-robots-done-quick/508471",
+          "citation": "Ran a 'Robots Done Quick' bit and fully committed to the speedrun energy.",
+          "stat": ""
+        },
+        {
+          "team": 4926,
+          "teamName": "GalacTech 4926 - OA",
+          "threadTitle": "GalacTech 4926 - OA Build Blog 2026",
+          "url": "https://www.chiefdelphi.com/t/galactech-4926-oa-build-blog-2026/508067",
+          "citation": "\"I promise I won't make any more puns\" (they made more puns).",
+          "stat": ""
+        }
+      ]
+    },
+    {
+      "key": "best-comeback",
+      "title": "Best Comeback",
+      "emoji": "🦾",
+      "blurb": "The best recovery-from-disaster arc.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "For the team that took the rough first act and rewrote the ending…",
+      "winner": {
+        "team": 9644,
+        "teamName": "9644 NEIA Robotics",
+        "threadTitle": "9644 NEIA Robotics | 2026 Build Thread",
+        "url": "https://www.chiefdelphi.com/t/9644-neia-robotics-2026-build-thread/509142",
+        "citation": "Went from 'cons: just about everything else' at Week 0 to the best event of their lives by DCMP — that's the arc.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "DCMP was the most fun and exhilarating event we've competed at ever - and probably will remain that for a long time to come.",
+        "author": "Vishnu Bharath",
+        "url": "https://www.chiefdelphi.com/t/9644-neia-robotics-2026-build-thread/509142"
+      },
+      "nominees": [
+        {
+          "team": 3061,
+          "teamName": "FRC 3061 Huskie Robotics",
+          "threadTitle": "FRC 3061 Huskie Robotics - 2026 Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-3061-huskie-robotics-2026-build-thread/509957",
+          "citation": "\"We did what we could with what we had\" — and came back with a plan.",
+          "stat": ""
+        },
+        {
+          "team": 2826,
+          "teamName": "FRC 2826 Wave Robotics 🌊",
+          "threadTitle": "FRC 2826 Wave Robotics 🌊 | 2026 Open Alliance Build Thread",
+          "url": "https://www.chiefdelphi.com/t/frc-2826-wave-robotics-2026-open-alliance-build-thread/508460",
+          "citation": "Fought the triple-coax turret for weeks until the night it finally spun up.",
+          "stat": ""
+        },
+        {
+          "team": 157,
+          "teamName": "FRC 157 The AZTECHS",
+          "threadTitle": "FRC 157 The AZTECHS | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-157-the-aztechs-2026-build-thread-open-alliance/509425",
+          "citation": "The YAMS-ening: dragged a stubborn system from sim to a working bot.",
+          "stat": ""
+        }
+      ]
+    },
+    {
+      "key": "most-helpful",
+      "title": "Best Supporting Team",
+      "emoji": "🤝",
+      "blurb": "The team that gave most generously back to the community.",
+      "method": "ai",
+      "tier": "juried",
+      "presenter": "For the team whose best work this season was making everyone else's robot better…",
+      "winner": {
+        "team": 3467,
+        "teamName": "3467 Windham Windup",
+        "threadTitle": "3467 Windham Windup 2026 Build Blog",
+        "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474",
+        "citation": "Didn't just solve their own CAN headaches — battle-tested the fix across connector types so other teams wouldn't have to.",
+        "stat": ""
+      },
+      "quote": {
+        "text": "We currently use the Molex SL compatible version, but have spent some time battle-testing both the WAGO Lever-Lock & Direct Solder versions of this board as well to ensure proper function for teams!",
+        "author": "credard",
+        "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474"
+      },
+      "nominees": [
+        {
+          "team": 4561,
+          "teamName": "4561 The TerrorBytes",
+          "threadTitle": "4561 The TerrorBytes | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/4561-the-terrorbytes-2026-build-thread-open-alliance/508623",
+          "citation": "Published a full sponsorship guide so other teams could fund themselves.",
+          "stat": ""
+        },
+        {
+          "team": 7407,
+          "teamName": "FRC 7407 Wired Boars",
+          "threadTitle": "FRC 7407 Wired Boars | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/frc-7407-wired-boars-2026-build-thread-open-alliance/507852",
+          "citation": "Shared hopper simulations openly and credited the teams they learned from.",
+          "stat": ""
+        },
+        {
+          "team": 5406,
+          "teamName": "Celt-X 5406",
+          "threadTitle": "Celt-X 5406 | 2026 Build Thread | Open Alliance",
+          "url": "https://www.chiefdelphi.com/t/celt-x-5406-2026-build-thread-open-alliance/511200",
+          "citation": "Posted their full kickoff game analysis for anyone trying to understand Rebuilt.",
+          "stat": ""
+        }
+      ]
     }
   ],
   "superlatives": [
     {
       "emoji": "🦉",
       "title": "Burning the Midnight Oil",
-      "team": 694,
-      "teamName": "FRC 694 StuyPulse",
-      "url": "https://www.chiefdelphi.com/t/frc-694-stuypulse-2026-build-thread-open-alliance/509490",
-      "line": "81 posts dropped in the small hours."
+      "team": 2358,
+      "teamName": "2358 Bearbotics",
+      "url": "https://www.chiefdelphi.com/t/2358-bearbotics-build-blog-2026-rebuilt-open-alliance/508942",
+      "line": "74 posts dropped in the small hours."
     },
     {
       "emoji": "📚",
@@ -425,18 +713,18 @@
     {
       "emoji": "🎬",
       "title": "Director's Cut",
-      "team": 1540,
-      "teamName": "Team 1540 Flaming Chickens",
-      "url": "https://www.chiefdelphi.com/t/team-1540-flaming-chickens-2026-build-thread/508155",
-      "line": "38 videos rolled this season."
+      "team": 3161,
+      "teamName": "Tronic Titans 3161",
+      "url": "https://www.chiefdelphi.com/t/tronic-titans-3161-build-thread-open-alliance-2026/507946",
+      "line": "8 videos rolled this season."
     },
     {
       "emoji": "🔗",
       "title": "The Link Librarian",
-      "team": 4322,
-      "teamName": "4322 Clockwork",
-      "url": "https://www.chiefdelphi.com/t/4322-clockwork-2026-build-thread-open-alliance/511196",
-      "line": "805 links shared with the community."
+      "team": 4926,
+      "teamName": "GalacTech 4926 - OA",
+      "url": "https://www.chiefdelphi.com/t/galactech-4926-oa-build-blog-2026/508067",
+      "line": "525 links shared with the community."
     },
     {
       "emoji": "🧵",
@@ -457,10 +745,10 @@
     {
       "emoji": "📈",
       "title": "The Steady Hand",
-      "team": 2358,
-      "teamName": "2358 Bearbotics",
-      "url": "https://www.chiefdelphi.com/t/2358-bearbotics-build-blog-2026-rebuilt-open-alliance/508942",
-      "line": "Posted on 66 different days. Consistency!"
+      "team": 5826,
+      "teamName": "Avis Automata 5826",
+      "url": "https://www.chiefdelphi.com/t/avis-automata-5826-open-alliance-2026/508994",
+      "line": "Posted on 45 different days. Consistency!"
     },
     {
       "emoji": "🎤",
@@ -481,18 +769,18 @@
     {
       "emoji": "⚡",
       "title": "Rapid Fire",
-      "team": 3467,
-      "teamName": "3467 Windham Windup",
-      "url": "https://www.chiefdelphi.com/t/3467-windham-windup-2026-build-blog/508474",
-      "line": "27 posts in a single day."
+      "team": 9496,
+      "teamName": "LYNK 9496",
+      "url": "https://www.chiefdelphi.com/t/lynk-9496-build-log-2026/511797",
+      "line": "13 posts in a single day."
     },
     {
       "emoji": "💬",
       "title": "The Conversation Starter",
-      "team": 9496,
-      "teamName": "LYNK 9496",
-      "url": "https://www.chiefdelphi.com/t/lynk-9496-build-log-2026/511797",
-      "line": "Sparked 99 replies."
+      "team": 2826,
+      "teamName": "FRC 2826 Wave Robotics 🌊",
+      "url": "https://www.chiefdelphi.com/t/frc-2826-wave-robotics-2026-open-alliance-build-thread/508460",
+      "line": "Sparked 55 replies."
     },
     {
       "emoji": "🔥",
@@ -505,10 +793,10 @@
     {
       "emoji": "✍️",
       "title": "The Prolific Pen",
-      "team": 95,
-      "teamName": "FRC 95 The Grasshoppers",
-      "url": "https://www.chiefdelphi.com/t/frc-95-the-grasshoppers-2026-build-thread/507859",
-      "line": "One member posted 85 times."
+      "team": 1250,
+      "teamName": "Gator-Bots 1250",
+      "url": "https://www.chiefdelphi.com/t/gator-bots-1250-build-blog-2026/511541",
+      "line": "One member posted 55 times."
     },
     {
       "emoji": "🎨",

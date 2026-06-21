@@ -8,6 +8,8 @@ dist
 # The baked data/awards-2026.json IS committed so the site builds without scraping.
 .cache/
 data/raw-2026.json
+# Scratch digest dumped by judge.ts for authoring offline juried picks (derived from raw).
+data/juried-digest.txt
 
 # TypeScript incremental build cache
 *.tsbuildinfo

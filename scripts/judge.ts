@@ -12,6 +12,7 @@
 // Metric + superlative awards need no API key. Juried awards run only if
 // ANTHROPIC_API_KEY is set.
 
+import { existsSync } from 'node:fs'
 import { readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -24,6 +25,9 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const RAW = join(ROOT, 'data', `raw-${SEASON}.json`)
 const OUT = join(ROOT, 'data', `awards-${SEASON}.json`)
 const SEASON_END = '2026-06-01T00:00:00Z' // fixed "now" so reruns are deterministic
+// Offline juried path: hand-authored picks in, candidate digest out (no API key needed).
+const PICKS = join(ROOT, 'data', 'juried-picks.json')
+const DIGEST = join(ROOT, 'data', 'juried-digest.txt')
 
 // ---- raw data shape (mirror of harvest output) ----
 interface RawPost {
@@ -623,8 +627,16 @@ async function judgeAiAward(
     console.warn(`  ${award.title}: no tool_use in response (stop=${resp.stop_reason})`)
     return null
   }
-  const r = toolUse.input as AiResult
+  return assembleJuried(award, toolUse.input as AiResult, pool, honored)
+}
 
+/** Turn a judged result (from the API or a hand-authored picks file) into a Category. */
+function assembleJuried(
+  award: AiAward,
+  r: AiResult,
+  pool: RawThread[],
+  honored: Set<string>,
+): Category | null {
   const byName = new Map(pool.map((t) => [teamName(t).toLowerCase(), t]))
   const resolve = (name: string): RawThread | undefined => {
     const key = name.toLowerCase()
@@ -664,6 +676,23 @@ async function judgeAiAward(
   }
 }
 
+/** Offline juried award: resolve a hand-authored pick, no API key needed. */
+function juriedFromPicks(
+  award: AiAward,
+  threads: RawThread[],
+  honored: Set<string>,
+  r: AiResult | undefined,
+): Category | null {
+  if (!r) {
+    console.warn(`  ${award.title}: no entry in juried-picks.json — skipping`)
+    return null
+  }
+  // Rebuild the pool fresh so earlier juried winners are excluded here too.
+  const { pool } = buildDigest(threads, honored)
+  if (pool.length === 0) return null
+  return assembleJuried(award, r, pool, honored)
+}
+
 // ---- main ----
 
 async function main() {
@@ -689,10 +718,24 @@ async function main() {
         console.warn(`  ✗ ${award.title}: ${String(err)}`)
       }
     }
+  } else if (existsSync(PICKS)) {
+    const picks: Record<string, AiResult> = JSON.parse(await readFile(PICKS, 'utf8'))
+    console.log(`No API key — building ${AI_AWARDS.length} juried awards from juried-picks.json (excluding already-honored teams)…`)
+    for (const award of AI_AWARDS) {
+      const cat = juriedFromPicks(award, threads, honored, picks[award.key])
+      if (cat) {
+        categories.push(cat)
+        console.log(`  ✓ ${award.title} → ${cat.winner.teamName}`)
+      }
+    }
   } else {
+    const { digest } = buildDigest(threads, honored)
+    await writeFile(DIGEST, digest)
     console.warn(
-      '\nANTHROPIC_API_KEY not set — skipping juried (AI) awards.\n' +
-        'Set it (e.g. in .env or `export ANTHROPIC_API_KEY=...`) and re-run `npm run judge` for the full ceremony.\n',
+      `\nANTHROPIC_API_KEY not set and no data/juried-picks.json found — skipping juried (AI) awards.\n` +
+        `Wrote the candidate digest to ${DIGEST}. To get the full ceremony, either:\n` +
+        `  • set ANTHROPIC_API_KEY (e.g. in .env) and re-run \`npm run judge\`, or\n` +
+        `  • author data/juried-picks.json from the digest and re-run \`npm run judge\` to judge offline.\n`,
     )
   }
 
