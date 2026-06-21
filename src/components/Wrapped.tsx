@@ -318,7 +318,7 @@ function SlideView({
 function IntroSlide({ show }: { show: AwardsShow }) {
   return (
     <div className="mx-auto max-w-xl text-center">
-      <Statuette className="shimmer mx-auto h-24 w-12" />
+      <Statuette className="shimmer mx-auto h-32 w-32" />
       <p className="mt-5 text-sm uppercase tracking-[0.5em] text-amber-400/90">
         The {show.season} Open Alliance
       </p>
@@ -386,7 +386,7 @@ function AwardSlide({ category }: { category: Category }) {
       <div className="mt-8 overflow-hidden rounded-2xl border border-amber-500/30 bg-gradient-to-b from-velvet-light to-velvet text-left shadow-[0_0_40px_-12px_rgba(212,175,55,0.4)]">
         <div className="flex flex-col items-center gap-5 p-7 sm:flex-row sm:items-stretch">
           <div className="flex shrink-0 items-center justify-center sm:w-16">
-            <Statuette className="shimmer h-24 w-12" />
+            <Statuette className="shimmer h-16 w-16" />
           </div>
           <div className="flex-1 text-center sm:text-left">
             <div className="text-xs font-semibold uppercase tracking-[0.3em] text-amber-400">
@@ -478,7 +478,7 @@ function SuperlativesSlide({ items }: { items: Superlative[] }) {
 function OutroSlide({ show, onReplay }: { show: AwardsShow; onReplay: () => void }) {
   return (
     <div className="mx-auto max-w-xl text-center">
-      <Statuette className="shimmer mx-auto h-24 w-12" />
+      <Statuette className="shimmer mx-auto h-32 w-32" />
       <h2 className="gold-text mt-6 font-display text-4xl font-black tracking-tight sm:text-5xl">
         That's a wrap.
       </h2>
