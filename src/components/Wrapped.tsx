@@ -23,8 +23,40 @@ type Slide =
   | { type: 'intro' }
   | { type: 'tier'; tier: Tier }
   | { type: 'award'; category: Category }
-  | { type: 'superlatives'; items: Superlative[] }
+  | { type: 'superlatives'; items: Superlative[]; part: number }
   | { type: 'outro' }
+
+/** Stable, shareable URL slug for each slide (the bit after `#/`). */
+function slugFor(slide: Slide): string {
+  switch (slide.type) {
+    case 'intro':
+      return ''
+    case 'tier':
+      return `tier-${slide.tier}`
+    case 'award':
+      return slide.category.key
+    case 'superlatives':
+      return `superlatives-${slide.part}`
+    case 'outro':
+      return 'wrap'
+  }
+}
+
+/** Human-readable label for a slide, used in share text. */
+function labelFor(slide: Slide): string {
+  switch (slide.type) {
+    case 'intro':
+      return 'The Open Alliance Awards'
+    case 'tier':
+      return TIERS[slide.tier].label
+    case 'award':
+      return slide.category.title
+    case 'superlatives':
+      return 'The Superlatives'
+    case 'outro':
+      return "That's a wrap"
+  }
+}
 
 function chunk<T>(arr: T[], size: number): T[][] {
   const out: T[][] = []
@@ -46,9 +78,9 @@ function buildSlides(show: AwardsShow): Slide[] {
     slides.push({ type: 'award', category })
   }
 
-  for (const items of chunk(show.superlatives, 4)) {
-    slides.push({ type: 'superlatives', items })
-  }
+  chunk(show.superlatives, 4).forEach((items, i) => {
+    slides.push({ type: 'superlatives', items, part: i + 1 })
+  })
 
   slides.push({ type: 'outro' })
   return slides
@@ -56,18 +88,44 @@ function buildSlides(show: AwardsShow): Slide[] {
 
 export function Wrapped({ show }: { show: AwardsShow }) {
   const slides = useMemo(() => buildSlides(show), [show])
-  const [index, setIndex] = useState(0)
+  const slugs = useMemo(() => slides.map(slugFor), [slides])
+
+  // The URL hash (`#/best-picture`) is the source of truth: deep links, the
+  // share button, and browser back/forward all resolve through it.
+  const indexFromHash = useCallback(() => {
+    const slug = window.location.hash.replace(/^#\/?/, '')
+    const i = slugs.indexOf(slug)
+    return i >= 0 ? i : 0
+  }, [slugs])
+
+  const [index, setIndex] = useState(indexFromHash)
   const [dir, setDir] = useState<1 | -1>(1)
+
+  // Resolve hash → slide whenever it changes (typed URL, share link, back/forward).
+  // Direction is inferred from the jump so the swipe animation still plays.
+  useEffect(() => {
+    const sync = () =>
+      setIndex((cur) => {
+        const next = indexFromHash()
+        if (next !== cur) setDir(next > cur ? 1 : -1)
+        return next
+      })
+    sync()
+    window.addEventListener('hashchange', sync)
+    return () => window.removeEventListener('hashchange', sync)
+  }, [indexFromHash])
 
   const go = useCallback(
     (next: number) => {
-      setIndex((cur) => {
-        const clamped = Math.max(0, Math.min(slides.length - 1, next))
-        if (clamped !== cur) setDir(clamped > cur ? 1 : -1)
-        return clamped
-      })
+      const clamped = Math.max(0, Math.min(slides.length - 1, next))
+      const slug = slugs[clamped]
+      // Writing the hash fires `hashchange`, which updates index + direction
+      // and adds a history entry so each slide is independently linkable.
+      if (window.location.hash.replace(/^#\/?/, '') !== slug) {
+        window.location.hash = `/${slug}`
+      }
     },
-    [slides.length],
+    [slides.length, slugs],
   )
   const advance = useCallback(() => go(index + 1), [go, index])
   const rewind = useCallback(() => go(index - 1), [go, index])
@@ -190,7 +248,47 @@ export function Wrapped({ show }: { show: AwardsShow }) {
       <p className="pointer-events-none absolute inset-x-0 bottom-4 z-10 text-center text-[0.7rem] uppercase tracking-[0.3em] text-stone-600">
         Swipe · tap · ← →
       </p>
+
+      <ShareButton label={labelFor(slide)} season={show.season} />
     </div>
+  )
+}
+
+function ShareButton({ label, season }: { label: string; season: number }) {
+  const [copied, setCopied] = useState(false)
+
+  const share = async (e: React.MouseEvent) => {
+    e.stopPropagation()
+    const url = window.location.href
+    const data = { title: `The ${season} Open Alliance Awards`, text: label, url }
+    // Native share sheet on mobile; copy-to-clipboard fallback everywhere else.
+    if (typeof navigator.share === 'function') {
+      try {
+        await navigator.share(data)
+        return
+      } catch {
+        // user dismissed the sheet — do nothing
+        return
+      }
+    }
+    try {
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 1800)
+    } catch {
+      /* clipboard unavailable */
+    }
+  }
+
+  return (
+    <button
+      onClick={share}
+      aria-label="Share this page"
+      className="absolute bottom-3 right-3 z-20 flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-velvet/70 px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.2em] text-amber-300 backdrop-blur transition-colors hover:bg-amber-500/10 sm:bottom-4 sm:right-4"
+    >
+      <span aria-hidden>{copied ? '✓' : '⤴'}</span>
+      {copied ? 'Copied' : 'Share'}
+    </button>
   )
 }
 
